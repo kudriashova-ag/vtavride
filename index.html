@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:ital,wght@1,600&family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/fonts/icons/icons.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>В Тавриде</title>
+</head>
+
+<body class="main-page">
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-xl">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><svg width="30" height="18" viewBox="0 0 30 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <line y1="1" x2="30" y2="1" stroke="white" stroke-width="2" />
+              <line y1="9" x2="30" y2="9" stroke="white" stroke-width="2" />
+              <line y1="17" x2="30" y2="17" stroke="white" stroke-width="2" />
+            </svg></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <div class="logo">В|<span>Тавриде</span></div>
+        </a>
+
+        <ul class="nav-menu social-icons  d-none d-sm-flex">
+          <li class="nav-item">
+            <a href="" class="nav-link"><img src="assets/icons/akar-icons_telegram-fill.svg" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"><img src="assets/icons/dashicons_whatsapp.svg" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"><img src="assets/icons/jam_viber-circle.svg" alt=""></a>
+          </li>
+        </ul>
+
+
+        <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Подбор жилья</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Сдать жильё</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Мои бронирования</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Избранное</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Смотрели</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Приведи друга</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="nav-menu align-items-center ms-auto">
+          <li class="nav-item">
+            <a href="" class="nav-link notifications"><span class="icon icon-fi_bell"></span></a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link user-info">
+              <img src="assets/images/auth-user.png" alt="" class="rounded-circle user-photo">
+              <span class="user-name d-none d-xl-inline">Константин</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <main></main>
+
+  <footer></footer>
+
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script>
+    var myCollapsible = document.getElementById('navbarSupportedContent')
+    myCollapsible.addEventListener('show.bs.collapse', function () {
+      const parentNav = myCollapsible.closest('nav');
+      parentNav.classList.remove('navbar-dark');
+      parentNav.classList.add('bg-light', 'navbar-light');
+    });
+    myCollapsible.addEventListener('hide.bs.collapse', function () {
+      const parentNav = myCollapsible.closest('nav');
+      parentNav.classList.remove('bg-light', 'navbar-light');
+      parentNav.classList.add('navbar-dark');
+    });
+  </script>
+</body>
+
+</html>

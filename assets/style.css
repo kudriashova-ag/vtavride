@@ -1,0 +1,93 @@
+body {
+  background: url("images/header-bg-main.png") no-repeat 50% 0 / 100% auto,
+    url("images/footer-bg.png") no-repeat 50% 100% / 100% auto;
+}
+
+/* HEADER */
+.logo {
+  text-transform: uppercase;
+  font: normal bold 28px "Roboto", serif;
+  color: #fff;
+}
+
+.logo span {
+  color: #ffffff80;
+}
+
+.navbar-light .logo{
+  color: var(--bs-body-color)
+}
+
+.navbar-light .logo span{
+  color: #24242480
+}
+
+
+.nav-link {
+  font: 500 12px "Raleway", serif;
+}
+
+.icon {
+  color: #fff;
+}
+
+.notifications {
+  font-size: 24px;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.user-name {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons {
+  margin: 0 10px;
+}
+
+.nav-menu .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #fff;
+}
+.navbar-light .nav-menu .nav-link, .navbar-light .icon {
+  color: var(--bs-body-color)
+}
+.navbar-dark .navbar-toggler {
+  margin-right: 15px;
+}
+
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+.navbar-dark .navbar-toggler-icon {
+  background: none;
+  height: 25px;
+}
+.navbar-brand {
+  margin-right: 30px;
+}
+
+header .navbar-collapse {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background: #fff;
+  left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: var(--bs-body-color);
+  font-size: 1rem;
+}
