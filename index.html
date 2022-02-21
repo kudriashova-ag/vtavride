@@ -21,14 +21,13 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-xl">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><svg width="30" height="18" viewBox="0 0 30 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <line y1="1" x2="30" y2="1" stroke="white" stroke-width="2" />
-              <line y1="9" x2="30" y2="9" stroke="white" stroke-width="2" />
-              <line y1="17" x2="30" y2="17" stroke="white" stroke-width="2" />
-            </svg></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
+          aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </span>
         </button>
         <a class="navbar-brand" href="#">
           <div class="logo">В|<span>Тавриде</span></div>
@@ -47,7 +46,7 @@
         </ul>
 
 
-        <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse ms-auto" id="main-menu">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="#">Подбор жилья</a>
@@ -86,13 +85,21 @@
     </nav>
   </header>
 
-  <main></main>
+
+
+  <main>
+    <div class="section welcome">
+      <div class="container">
+        <h2>Получи незабываемый отдых в Крыму <span class="oval-text-decoration">с жильём без посредников</span></h2>
+      </div>
+    </div>
+  </main>
 
   <footer></footer>
 
   <script src="assets/js/bootstrap.min.js"></script>
   <script>
-    var myCollapsible = document.getElementById('navbarSupportedContent')
+    var myCollapsible = document.getElementById('main-menu')
     myCollapsible.addEventListener('show.bs.collapse', function () {
       const parentNav = myCollapsible.closest('nav');
       parentNav.classList.remove('navbar-dark');

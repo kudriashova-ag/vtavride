@@ -12,16 +12,16 @@ body {
 
 .logo span {
   color: #ffffff80;
+  margin-left: 5px;
 }
 
-.navbar-light .logo{
-  color: var(--bs-body-color)
+.navbar-light .logo {
+  color: var(--bs-body-color);
 }
 
-.navbar-light .logo span{
-  color: #24242480
+.navbar-light .logo span {
+  color: #24242480;
 }
-
 
 .nav-link {
   font: 500 12px "Raleway", serif;
@@ -61,8 +61,9 @@ body {
   padding-left: 0.5rem;
   color: #fff;
 }
-.navbar-light .nav-menu .nav-link, .navbar-light .icon {
-  color: var(--bs-body-color)
+.navbar-light .nav-menu .nav-link,
+.navbar-light .icon {
+  color: var(--bs-body-color);
 }
 .navbar-dark .navbar-toggler {
   margin-right: 15px;
@@ -76,7 +77,7 @@ body {
   height: 25px;
 }
 .navbar-brand {
-  margin-right: 30px;
+  margin-right: 18px;
 }
 
 header .navbar-collapse {
@@ -87,7 +88,91 @@ header .navbar-collapse {
   left: 0;
 }
 
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
   color: var(--bs-body-color);
   font-size: 1rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background: none;
+  position: relative;
+}
+
+.navbar-toggler-icon div {
+  position: relative;
+  top: 0;
+  height: 2px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width,
+    0.3s ease right;
+  width: 30px;
+}
+
+.navbar-toggler-icon div:first-child {
+  transform-origin: 0;
+}
+.navbar-toggler-icon div:last-child {
+  margin-bottom: 0;
+  transform-origin: 30px;
+}
+
+.navbar-toggler-icon div:nth-child(2) {
+  right: 0;
+}
+.navbar-light .navbar-toggler-icon div {
+  background: var(--bs-body-color);
+}
+.navbar-light .navbar-toggler-icon div:first-child {
+  top: -3px;
+  transform: rotateZ(45deg);
+}
+
+.navbar-light .navbar-toggler-icon div:last-child {
+  top: -11px;
+  right: 9px;
+  transform: rotateZ(-45deg);
+}
+
+.navbar-light .navbar-toggler-icon div:nth-child(2) {
+  display: none;
+}
+
+.navbar-light #main-menu {
+  padding: 10px;
+}
+.navbar-light #main-menu ul {
+  column-count: 2;
+  display: block;
+}
+
+.oval-text-decoration {
+  display: table;
+  padding: 10px 20px 30px 20px;
+  background: url(images/round.png) 0 0 / 100% 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-light #main-menu ul {
+    column-count: 0;
+    display: flex;
+  }
+  header .navbar-collapse {
+    position: static;
+    top: 100%;
+    width: auto;
+    background: none;
+    left: 0;
+  }
+  #main-menu ul {
+    column-count: 0;
+    display: flex;
+  }
 }
