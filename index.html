@@ -538,10 +538,17 @@
         постоянный
         количественный рост и сфера нашей активности позволяет оценить значение позиций,занимаемых участниками в
         отношении
-        поставленных зада...</p>
-      <a href="">Развернуть весь текст</a>
+        поставленных задач.
+        <div id="aboutUs" class="collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, accusamus!
+        </div>
+      </p>
+      <a data-bs-toggle="collapse" href="#aboutUs">Развернуть весь текст</a>
     </div>
+
   </main>
+
+
+
 
   <footer>
     <div class="container-lg">
@@ -553,13 +560,19 @@
         </div>
         <div class="col-auto">
           <div class="social-icons">
-            <a href="">1</a><a href="">2</a><a href="">3</a><a href="">4</a><a href="">5</a><a href="">6</a>
+            <a href="" class="icon btn btn-primary"><img src="assets/icons/icon-vk.svg" alt=""></a>
+            <a href="" class="icon btn btn-primary"><img src="assets/icons/icon-facebook.svg" alt=""></a>
+            <a href="" class="icon btn btn-primary"><img src="assets/icons/icon-ok.svg" alt=""></a>
+            <a href="" class="icon btn btn-primary"><img src="assets/icons/icon-youtube.svg" alt=""></a>
+            <a href="" class="icon btn btn-primary"><img src="assets/icons/icon-instagram.svg" alt=""></a>
+            <a href="" class="icon btn btn-primary"><img src="assets/icons/icon-music.svg" alt=""></a>
+            <a href="" class="icon btn btn-primary"><img src="assets/icons/icon-yandex.svg" alt=""></a>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-4 col-lg-auto">
+      <div class="row mt-3">
+        <div class="col-md-4 col-lg-auto d-flex align-items-center">
           <div class="footer-menu">
             <a href="">Разместить жильё</a>
             <a href="">Подбор жилья</a>
@@ -567,7 +580,7 @@
             <a href="">Рекламодателям</a>
           </div>
         </div>
-        <div class="col-md-4 col-lg-auto">
+        <div class="col-md-4 col-lg-auto d-flex align-items-center">
           <div class="footer-menu">
             <a href="">Карта сайта</a>
             <a href="">Обратная связь</a>
@@ -575,7 +588,7 @@
             <a href="">Помощь по сайту</a>
           </div>
         </div>
-        <div class="col-md-4 col-lg-auto">
+        <div class="col-md-4 col-lg-auto d-flex align-items-center">
           <div class="footer-menu">
             <a href="">Личный кабинет</a>
             <a href="">Мои объекты</a>
@@ -596,7 +609,8 @@
                   <input type="text" class="form-control" placeholder="Укажи эл. почту">
                   <button class="btn btn-primary"><img src="assets/icons/icon-subscribe.svg" alt=""></button>
                 </form>
-                <p class="subscribe-agree">При нажатии на кнопку вы соглашаетесь с <a href="">пользовательским соглашением</a> и <a href="">политикой конфиденциальностью</a></p>
+                <p class="subscribe-agree">При нажатии на кнопку вы соглашаетесь с <a href="">пользовательским
+                    соглашением</a> и <a href="">политикой конфиденциальностью</a></p>
               </div>
             </div>
           </div>
@@ -622,78 +636,7 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="assets/owl.carousel/owl.carousel.min.js"></script>
-  <script>
-    var myCollapsible = document.getElementById('main-menu')
-    myCollapsible.addEventListener('show.bs.collapse', function () {
-      const parentNav = myCollapsible.closest('nav');
-      parentNav.classList.remove('navbar-dark');
-      parentNav.classList.add('bg-light', 'navbar-light');
-    });
-    myCollapsible.addEventListener('hide.bs.collapse', function () {
-      const parentNav = myCollapsible.closest('nav');
-      parentNav.classList.remove('bg-light', 'navbar-light');
-      parentNav.classList.add('navbar-dark');
-    });
-
-
-
-    function owlInitialize() {
-      if ($(window).width() < 768) {
-        $('.advantage').addClass("owl-carousel advantage-slider");
-        $('.advantage-slider').owlCarousel({
-          loop: false,
-          margin: 20,
-          nav: false,
-          dots: false,
-          items: 1,
-          autoWidth: true
-        });
-      } else {
-        $('.advantage-slider').owlCarousel('destroy');
-        $('.advantage').removeClass("owl-carousel advantage-slider");
-      }
-
-      if ($(window).width() < 1200) {
-        $('.owl-offer').addClass("owl-carousel offer-slider");
-        $('.offer-slider').owlCarousel({
-          loop: true,
-          nav: false,
-          dots: false,
-          items: 1,
-          centerMode: true,
-          responsive: {
-            0: {
-              items: 1,
-              nav: true
-            },
-            768: {
-              items: 3,
-            }
-          }
-        });
-      } else {
-        $('.offer-slider').owlCarousel('destroy');
-        $('.owl-offer').removeClass("owl-carousel offer-slider");
-      }
-
-    }
-    $(document).ready(function (e) {
-      owlInitialize();
-    });
-    $(window).resize(function () {
-      owlInitialize();
-    });
-
-
-    $(document).ready(function (e) {
-      $('.owl-slider').owlCarousel({
-        loop: true,
-        nav: true,
-        dots: true,
-        items: 1,
-      });
-    });
-  </script>
+  <script src="assets/script.js"></script>
 
 
 </body>
