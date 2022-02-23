@@ -677,6 +677,7 @@ header .subscribe-block {
   width: 100%;
   max-height: 300px;
   display: none;
+  overflow: auto;
 }
 
 .cities ul {
