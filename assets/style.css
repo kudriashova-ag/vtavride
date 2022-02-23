@@ -58,7 +58,7 @@
 .social-icons {
   margin: 0 10px;
 }
-.interactive-map{
+.interactive-map {
   display: none;
 }
 .nav-menu .nav-link {
@@ -648,6 +648,81 @@ header .subscribe-block {
   filter: brightness(0.2);
 }
 
+.form-floating {
+  position: relative;
+}
+
+.form-floating > label {
+  position: absolute;
+  top: 3px;
+  left: 30px;
+  height: 100%;
+  pointer-events: none;
+  color: #808080;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.search-text-block.form-floating > label {
+  left: 10px;
+}
+.search input.search-text.border-radius-0 {
+  border-radius: 20px 0 0 0;
+}
+.cities {
+  position: absolute;
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  padding: 20px;
+  width: 100%;
+  max-height: 300px;
+  display: none;
+}
+
+.cities ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cities li {
+  padding: 5px;
+}
+.cities li + li {
+  border-top: 1px #ececec solid;
+}
+.city-link {
+  display: flex;
+  align-items: center;
+  color: #242424;
+}
+.city-link img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.city {
+  font-size: 14px;
+  font-weight: 500;
+}
+.city-info {
+  display: block;
+  font-size: 12px;
+  color: #828282;
+}
+.city-link .icon-map {
+  background: #f0f0f0;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 13px;
+}
+.city-link .icon-map img {
+  width: 24px;
+  height: 24px;
+}
+
 @media screen and (min-width: 768px) {
   .special-offers .slider-nav {
     display: flex;
@@ -729,7 +804,6 @@ header .subscribe-block {
   .search input.search-date {
     border-top: none;
     border-left: 1px #ececec solid;
-    padding-left: 40px;
   }
   .search-btn {
     margin: 0;
@@ -894,14 +968,14 @@ header .subscribe-block {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.3rem;
     padding-left: 0.3rem;
-}
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
+  .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.6rem;
     padding-left: 0.6rem;
-}
+  }
   .rent + .rent {
     margin-top: 0;
   }
@@ -1083,9 +1157,14 @@ header .subscribe-block {
   .slider .owl-slider .owl-dots .owl-dot.active span {
     background: #fff;
   }
-  .interactive-map{
+  .interactive-map {
     display: block;
     margin-left: auto;
     margin-top: -45px;
+  }
+  .city {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 auto;
   }
 }

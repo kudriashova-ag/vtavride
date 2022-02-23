@@ -121,16 +121,75 @@
           <div class="row g-0">
 
             <div class="col-md-7">
-              <div class="search-text-block">
-                <input type="text" class="form-control search-text" placeholder="Начните вводить">
+              <div class="form-floating search-text-block">
+                <input type="text" name="place" id="place-input" class="form-control search-text"
+                  placeholder="Начните вводить" autocomplete="off">
+                <label for="place-input">Начните вводить</label>
                 <a href="" class="select-city">Весь Крым</a>
+
+                <div class="cities">
+                  <ul>
+                    <li>
+                      <a href="" class="city-link">
+                        <div class="icon-map"><img src="assets/icons/fi_map-pin.svg" alt=""></div>
+                        <div class="city">
+                          Указать моё местоположение
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="city-link">
+                        <img src="assets/images/news-1.png" alt="">
+                        <div class="city">
+                          Севастополь
+                          <span class="city-info">2 123 варианта от 2 800₽</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="city-link">
+                        <img src="assets/images/news-2.png" alt="">
+                        <div class="city">
+                          Ялта
+                          <span class="city-info">2 123 варианта от 2 800₽</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="city-link">
+                        <img src="assets/images/news-3.png" alt="">
+                        <div class="city">
+                          Алушта
+                          <span class="city-info">2 123 варианта от 2 800₽</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="city-link">
+                        <img src="assets/images/news-1.png" alt="">
+                        <div class="city">
+                          Евпатория
+                          <span class="city-info">2 123 варианта от 2 800₽</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="col-md">
-              <input type="text" class="form-control search-date" placeholder="Даты">
+              <div class="form-floating">
+                <input type="text" name="date" id="date-input" class="form-control  search-date" placeholder="Даты"
+                  autocomplete="off">
+                <label for="place-input">Даты</label>
+              </div>
             </div>
             <div class="col-md">
-              <input type="text" class="form-control search-guest" placeholder="Гости">
+              <div class="form-floating">
+                <input type="text" name="guest" id="guest-input" class="form-control  search-guest" placeholder="Гости"
+                  autocomplete="off">
+                <label for="place-input">Гости</label>
+              </div>
             </div>
             <button class="btn btn-primary search-btn col-md-auto"><span class="d-inline d-md-none">Найти жильё</span>
               <img src="assets/icons/fi_search.svg" alt=""></button>

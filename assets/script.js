@@ -43,7 +43,14 @@ function owlInitialize() {
   newsSlider();
   reviewsSlider();
 
-
+  $('#place-input').focus(function () { 
+    $('#place-input').addClass('border-radius-0')
+    $('.cities').show();
+  })
+  $('#place-input').blur(function () {
+    $('#place-input').removeClass('border-radius-0')
+    $('.cities').hide();
+  })
 }
 
 $(document).ready(function (e) {
