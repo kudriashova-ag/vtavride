@@ -13,6 +13,16 @@ myCollapsible.addEventListener('hide.bs.collapse', function () {
 
 
 function owlInitialize() {
+  if ($(window).width() > 992) {
+    $('header .navbar').addClass('navbar-dark').removeClass('bg-light navbar-light')
+    $('header .navbar-toggler').addClass('collapsed');
+    $('header .navbar-collapse').removeClass('show');
+    $('.search-text').attr('placeholder', 'Курорт, город, адрес, номер объекта')
+  }
+  else { 
+    $('.search-text').attr('placeholder', 'Начните вводить')
+  }
+
   if ($(window).width() < 768) {
     $('.advantage').addClass("owl-carousel advantage-slider");
     $('.advantage-slider').owlCarousel({
