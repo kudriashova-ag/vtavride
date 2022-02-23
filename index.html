@@ -11,7 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:ital,wght@1,600&family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
-  <link rel="stylesheet" href="assets/fonts/icons/icons.css">
+  <!-- <link rel="stylesheet" href="assets/fonts/icons/icons.css"> -->
   <link rel="stylesheet" href="assets/owl.carousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/owl.carousel/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="assets/style.css">
@@ -71,7 +71,7 @@
           </ul>
 
           <div class="subscribe-block bg-gray p-4">
-          
+
             <div class="row">
               <div class="col-12">
                 <h3 class="subscribe-title">Получи скидку 5%</h3>
@@ -92,7 +92,7 @@
 
         <ul class="nav-menu align-items-center ms-auto">
           <li class="nav-item">
-            <a href="" class="nav-link notifications"><span class="icon icon-fi_bell"></span></a>
+            <a href="" class="nav-link notifications"><img src="assets/icons/fi_bell.svg" alt=""></a>
           </li>
           <li class="nav-item">
             <a href="" class="nav-link user-info">
@@ -111,7 +111,12 @@
   <main>
     <div class="section welcome">
       <div class="container-xl">
-        <h2>Получи незабываемый отдых в Крыму <span class="oval-text-decoration">с жильём без посредников</span></h2>
+
+        <div class="d-flex">
+          <h2>Получи незабываемый отдых в Крыму <span class="oval-text-decoration">с жильём без посредников</span></h2>
+          <a href="#map" class="interactive-map"><img src="assets/images/interactive-map.png" alt=""></a>
+        </div>
+
         <form class="search">
           <div class="row g-0">
 
@@ -128,7 +133,7 @@
               <input type="text" class="form-control search-guest" placeholder="Гости">
             </div>
             <button class="btn btn-primary search-btn col-md-auto"><span class="d-inline d-md-none">Найти жильё</span>
-              <span class="icon icon-fi_search"></span></button>
+              <img src="assets/icons/fi_search.svg" alt=""></button>
           </div>
         </form>
 
@@ -187,7 +192,7 @@
         <div class="slider-item">
           <div class="slider-img"><img src="assets/images/slider-1.png" alt=""></div>
           <div class="slider-content">
-            <div class="slider-content-title col-6">Экскурсия в Симеиз и окрестности <span class="text-warning">в
+            <div class="slider-content-title col-9">Экскурсия в Симеиз и окрестности <span class="text-warning">в
                 подарок</span> за первую бронь!</div>
             <a href="" class="btn btn-primary btn-content">Подробнее</a>
           </div>
@@ -195,7 +200,7 @@
         <div class="slider-item">
           <div class="slider-img"><img src="assets/images/slider-1.png" alt=""></div>
           <div class="slider-content">
-            <div class="slider-content-title col-6">Экскурсия в Симеиз и окрестности <span class="text-warning">в
+            <div class="slider-content-title col-9">Экскурсия в Симеиз и окрестности <span class="text-warning">в
                 подарок</span>
               за первую бронь!</div>
             <a href="" class="btn btn-primary btn-content">Подробнее</a>
@@ -204,7 +209,7 @@
         <div class="slider-item">
           <div class="slider-img"><img src="assets/images/slider-1.png" alt=""></div>
           <div class="slider-content">
-            <div class="slider-content-title col-6">Экскурсия в Симеиз и окрестности <span class="text-warning">в
+            <div class="slider-content-title col-9">Экскурсия в Симеиз и окрестности <span class="text-warning">в
                 подарок</span>
               за первую бронь!</div>
             <a href="" class="btn btn-primary btn-content">Подробнее</a>
@@ -215,8 +220,13 @@
 
     <div class="special-offers section">
       <div class="container-lg ">
-        <h2>Спецпредложения</h2>
-
+        <div class="d-flex">
+          <h2>Спецпредложения</h2>
+          <div class="slider-nav">
+            <a href="#" class="prev"><img src="assets/icons/fi_chevron-left.svg" alt=""></a>
+            <a href="#" class="next"><img src="assets/icons/fi_chevron-right.svg" alt=""></a>
+          </div>
+        </div>
         <ul class="nav nav-pills btn-group" id="offers-tab" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="btn btn-outline-warning active" id="tab-1-tab" data-bs-toggle="pill" data-bs-target="#tab-1"
@@ -232,9 +242,9 @@
           </li>
         </ul>
 
-        <div class="tab-content mt-3" id="offersTabContent">
+        <div class="tab-content mt-4" id="offersTabContent">
           <div class="tab-pane fade show active" id="tab-1">
-            <div class="row owl-offer">
+            <div class="row owl-offer owl-carousel offer-slider">
 
               <article class="col-4 offer">
                 <div class="wrap-image">
@@ -247,8 +257,8 @@
 
               <article class="col-4 offer">
                 <div class="wrap-image">
-                  <img src="assets/images/offer-1.png" alt="">
-                  <div class="offer-title">Отдых с видом на море — это круто!</div>
+                  <img src="assets/images/offer-2.png" alt="">
+                  <div class="offer-title">Приятно, когда можно не платить</div>
                 </div>
                 <div class="offer-date">до 12.07.2021</div>
                 <div class="offer-content">-30% на проживание в уютном видовом номере в декабре</div>
@@ -256,8 +266,8 @@
 
               <article class="col-4 offer">
                 <div class="wrap-image">
-                  <img src="assets/images/offer-1.png" alt="">
-                  <div class="offer-title">Отдых с видом на море — это круто!</div>
+                  <img src="assets/images/offer-3.png" alt="">
+                  <div class="offer-title">1 бонус = 1 рубль. Что может быть лучше?</div>
                 </div>
                 <div class="offer-date">до 12.07.2021</div>
                 <div class="offer-content">-30% на проживание в уютном видовом номере в декабре</div>
@@ -265,7 +275,7 @@
             </div>
           </div>
           <div class="tab-pane fade" id="tab-2">
-            <div class="row  owl-offer">
+            <div class="row owl-offer owl-carousel offer-slider">
 
 
               <article class="col-4 offer">
@@ -297,7 +307,7 @@
             </div>
           </div>
           <div class="tab-pane fade" id="tab-3">
-            <div class="row  owl-offer">
+            <div class="row owl-offer owl-carousel offer-slider">
 
 
               <article class="col-4 offer">
@@ -340,7 +350,7 @@
           <div class="destination-wrap-image">
             <img src="assets/images/destination-1.png" alt="">
             <div class="destination-title">
-              Ялта от 2 800₽
+              Ялта <span class="no-wrap">от 2 800₽</span>
               <a href="" class="btn btn-outline-light"><span class="d-none d-md-inline">321 предложений</span></a>
             </div>
           </div>
@@ -349,7 +359,7 @@
           <div class="destination-wrap-image">
             <img src="assets/images/destination-2.png" alt="">
             <div class="destination-title">
-              Ялта от 2 800₽
+              Судак <span class="no-wrap">от 2 800₽</span>
               <a href="" class="btn btn-outline-light"><span class="d-none d-md-inline">321 предложений</span></a>
             </div>
           </div>
@@ -358,7 +368,7 @@
           <div class="destination-wrap-image">
             <img src="assets/images/destination-3.png" alt="">
             <div class="destination-title">
-              Ялта от 2 800₽
+              Алушта <span class="no-wrap">от 2 800₽</span>
               <a href="" class="btn btn-outline-light"><span class="d-none d-md-inline">321 предложений</span></a>
             </div>
           </div>
@@ -367,7 +377,7 @@
           <div class="destination-wrap-image">
             <img src="assets/images/destination-4.png" alt="">
             <div class="destination-title">
-              Ялта от 2 800₽
+              Севастополь <span class="no-wrap">от 2 800₽</span>
               <a href="" class="btn btn-outline-light"><span class="d-none d-md-inline">321 предложений</span></a>
             </div>
           </div>
@@ -376,7 +386,7 @@
           <div class="destination-wrap-image">
             <img src="assets/images/destination-5.png" alt="">
             <div class="destination-title">
-              Ялта от 2 800₽
+              Феодосия <span class="no-wrap">от 2 800₽</span>
               <a href="" class="btn btn-outline-light"><span class="d-none d-md-inline">321 предложений</span></a>
             </div>
           </div>
@@ -385,7 +395,7 @@
           <div class="destination-wrap-image">
             <img src="assets/images/destination-6.png" alt="">
             <div class="destination-title">
-              Ялта от 2 800₽
+              Евпатория <span class="no-wrap">от 2 800₽</span>
               <a href="" class="btn btn-outline-light"><span class="d-none d-md-inline">321 предложений</span></a>
             </div>
           </div>
@@ -394,7 +404,7 @@
     </div>
 
 
-    <div class="container-lg section select-rest">
+    <div class="container-lg section select-rest" id="map">
       <div class="select-rest-block">
         <h2>Выберите место будущего отдыха</h2>
         <p>Если вы не знаете, где лучше провести отдых,
@@ -406,7 +416,7 @@
 
     <div class="container-lg section">
       <h2>Живите где хотите</h2>
-      <div class="row">
+      <div class="row me-md-0">
         <div class="col-6 col-xl-3">
           <div class="slider-places">
             <div class="place">
@@ -460,6 +470,7 @@
           </div>
         </div>
       </div>
+      <a href="" class="btn btn-primary btn-lg mx-auto d-table mt-3">Всё жильё</a>
     </div>
 
     <div class="container-lg section news">
@@ -470,85 +481,75 @@
           <a href="#" class="prev"><img src="assets/icons/fi_chevron-left.svg" alt=""></a>
           <a href="#" class="next"><img src="assets/icons/fi_chevron-right.svg" alt=""></a>
         </div>
+
       </div>
 
       <div class=" owl-carousel news-slider">
 
-        <div class="">
-          <div class="card">
-            <img class="card-img-top" src="assets/images/news-1.png" alt="Card image cap">
-            <div class="card-body">
-              <div class="offer-date">21 января 2021</div>
-              <h5 class="card-title">-30% на проживание в уютном видовом номере в декабре</h5>
-              <p class="card-text">Великолепная природа, чистейшее море, красавец Ай-Петри. Приветливые доброжелательные
-                хозяева...</p>
-            </div>
+        <div class="card">
+          <img class="card-img-top" src="assets/images/news-1.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="offer-date">21 января 2021</div>
+            <h5 class="card-title">-30% на проживание в уютном видовом номере в декабре</h5>
+            <p class="card-text">Великолепная природа, чистейшее море, красавец Ай-Петри. Приветливые доброжелательные
+              хозяева...</p>
+          </div>
 
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="assets/images/news-2.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="offer-date">21 января 2021</div>
+            <h5 class="card-title">-30% на проживание в уютном видовом номере в декабре</h5>
+            <p class="card-text">Великолепная природа, чистейшее море, красавец Ай-Петри. Приветливые доброжелательные
+              хозяева...</p>
           </div>
         </div>
 
-        <div class="">
-          <div class="card">
-            <img class="card-img-top" src="assets/images/news-2.png" alt="Card image cap">
-            <div class="card-body">
-              <div class="offer-date">21 января 2021</div>
-              <h5 class="card-title">-30% на проживание в уютном видовом номере в декабре</h5>
-              <p class="card-text">Великолепная природа, чистейшее море, красавец Ай-Петри. Приветливые доброжелательные
-                хозяева...</p>
-            </div>
+        <div class="card">
+          <img class="card-img-top" src="assets/images/news-3.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="offer-date">21 января 2021</div>
+            <h5 class="card-title">-30% на проживание в уютном видовом номере в декабре</h5>
+            <p class="card-text">Великолепная природа, чистейшее море, красавец Ай-Петри. Приветливые доброжелательные
+              хозяева...</p>
           </div>
         </div>
 
-        <div class="">
-          <div class="card">
-            <img class="card-img-top" src="assets/images/news-3.png" alt="Card image cap">
-            <div class="card-body">
-              <div class="offer-date">21 января 2021</div>
-              <h5 class="card-title">-30% на проживание в уютном видовом номере в декабре</h5>
-              <p class="card-text">Великолепная природа, чистейшее море, красавец Ай-Петри. Приветливые доброжелательные
-                хозяева...</p>
-            </div>
+        <div class="card">
+          <img class="card-img-top" src="assets/images/news-1.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="offer-date">21 января 2021</div>
+            <h5 class="card-title">-30% на проживание в уютном видовом номере в декабре</h5>
+            <p class="card-text">Великолепная природа, чистейшее море, красавец Ай-Петри. Приветливые доброжелательные
+              хозяева...</p>
+          </div>
+
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="assets/images/news-2.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="offer-date">21 января 2021</div>
+            <h5 class="card-title">-30% на проживание в уютном видовом номере в декабре</h5>
+            <p class="card-text">Великолепная природа, чистейшее море, красавец Ай-Петри. Приветливые доброжелательные
+              хозяева...</p>
           </div>
         </div>
 
-        <div class="">
-          <div class="card">
-            <img class="card-img-top" src="assets/images/news-1.png" alt="Card image cap">
-            <div class="card-body">
-              <div class="offer-date">21 января 2021</div>
-              <h5 class="card-title">-30% на проживание в уютном видовом номере в декабре</h5>
-              <p class="card-text">Великолепная природа, чистейшее море, красавец Ай-Петри. Приветливые доброжелательные
-                хозяева...</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="">
-          <div class="card">
-            <img class="card-img-top" src="assets/images/news-2.png" alt="Card image cap">
-            <div class="card-body">
-              <div class="offer-date">21 января 2021</div>
-              <h5 class="card-title">-30% на проживание в уютном видовом номере в декабре</h5>
-              <p class="card-text">Великолепная природа, чистейшее море, красавец Ай-Петри. Приветливые доброжелательные
-                хозяева...</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="">
-          <div class="card">
-            <img class="card-img-top" src="assets/images/news-3.png" alt="Card image cap">
-            <div class="card-body">
-              <div class="offer-date">21 января 2021</div>
-              <h5 class="card-title">-30% на проживание в уютном видовом номере в декабре</h5>
-              <p class="card-text">Великолепная природа, чистейшее море, красавец Ай-Петри. Приветливые доброжелательные
-                хозяева...</p>
-            </div>
+        <div class="card">
+          <img class="card-img-top" src="assets/images/news-3.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="offer-date">21 января 2021</div>
+            <h5 class="card-title">-30% на проживание в уютном видовом номере в декабре</h5>
+            <p class="card-text">Великолепная природа, чистейшее море, красавец Ай-Петри. Приветливые доброжелательные
+              хозяева...</p>
           </div>
         </div>
 
       </div>
+      <a href="" class="btn btn-primary btn-lg mx-auto d-table mt-3">Все новости</a>
     </div>
 
     <div class="section bg-gray">
@@ -772,10 +773,10 @@
       <div class="row">
         <div class="col-3">
           <a class="navbar-brand" href="#">
-            <div class="logo logo-dark">В|<span>Тавриде</span></div>
+            <div class="logo">В|<span>Тавриде</span></div>
           </a>
         </div>
-        <div class="col-auto">
+        <div class="col-12 col-md-auto ms-md-auto">
           <div class="social-icons">
             <a href="" class="icon btn btn-primary"><img src="assets/icons/icon-vk.svg" alt=""></a>
             <a href="" class="icon btn btn-primary"><img src="assets/icons/icon-facebook.svg" alt=""></a>

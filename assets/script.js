@@ -19,48 +19,27 @@ function owlInitialize() {
     $('header .navbar-collapse').removeClass('show');
     $('.search-text').attr('placeholder', 'Курорт, город, адрес, номер объекта')
   }
-  else { 
+  else {
     $('.search-text').attr('placeholder', 'Начните вводить')
   }
 
   if ($(window).width() < 768) {
     $('.advantage').addClass("owl-carousel advantage-slider");
     $('.advantage-slider').owlCarousel({
-      loop: false,
+      loop: true,
       margin: 20,
       nav: false,
       dots: false,
       items: 1,
-      autoWidth: true
+      centerMode: true,
+      stagePadding: 35
     });
   } else {
     $('.advantage-slider').owlCarousel('destroy');
     $('.advantage').removeClass("owl-carousel advantage-slider");
   }
 
-  if ($(window).width() < 1200) {
-    $('.owl-offer').addClass("owl-carousel offer-slider");
-    $('.offer-slider').owlCarousel({
-      loop: true,
-      nav: false,
-      dots: false,
-      items: 1,
-      centerMode: true,
-      responsive: {
-        0: {
-          items: 1,
-          nav: true
-        },
-        768: {
-          items: 3,
-        }
-      }
-    });
-  } else {
-    $('.offer-slider').owlCarousel('destroy');
-    $('.owl-offer').removeClass("owl-carousel offer-slider");
-  }
-
+  offerSlider();
   newsSlider();
   reviewsSlider();
 
@@ -77,21 +56,30 @@ $(window).resize(function () {
 
 
 $(document).ready(function (e) {
-  $('.owl-slider').owlCarousel({
-    loop: true,
-    nav: true,
-    dots: true,
-    items: 1,
+  $('.slider .owl-slider').owlCarousel({
+    responsive: {
+      0: {
+        loop: true,
+        margin: 20,
+        nav: false,
+        dots: true,
+        items: 1,
+        centerMode: true,
+        stagePadding: 35
+      },
+      1200: {
+        loop: true,
+        nav: true,
+        dots: true,
+        items: 1,
+        navText: ['<img src="assets/icons/fi_chevron-left.svg" alt="">', '<img src="assets/icons/fi_chevron-right.svg" alt="">']
+      }
+    }
+
   });
 });
 
 
-$(document).ready(function (e) {
-
-
-
-
-});
 
 
 
@@ -135,11 +123,25 @@ function reviewsSlider() {
   $('.reviews-slider').owlCarousel({
     responsive: {
       0: {
-        items: 1,
+        loop: true,
         margin: 20,
+        nav: false,
+        dots: false,
+        items: 1,
+        centerMode: true,
+        stagePadding: 35
       },
       768: {
+        loop: true,
+        margin: 20,
+        nav: false,
+        dots: false,
         items: 2,
+        centerMode: true,
+        stagePadding: 35
+      },
+      992: {
+        items: 3,
         margin: 20,
       },
       1200: {
@@ -158,6 +160,47 @@ function reviewsSlider() {
     owl.trigger('next.owl.carousel');
   })
   $('.reviews .slider-nav .prev').click(function (e) {
+    e.preventDefault();
+    owl.trigger('prev.owl.carousel', [300]);
+  })
+}
+
+
+function offerSlider() {
+  $('.offer-slider').owlCarousel({
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: false,
+        centerMode: true,
+        loop: true,
+        stagePadding: 20
+      },
+      768: {
+        items: 3,
+        nav: false,
+        dots: false,
+        centerMode: true,
+        loop: true,
+        stagePadding: 20
+      },
+      1200: {
+        items: 3,
+        nav: false,
+        dots: false,
+        loop: true,
+      }
+    }
+  });
+
+  let owl = $('.offer-slider');
+  owl.owlCarousel();
+  $('.special-offers .slider-nav .next').click(function (e) {
+    e.preventDefault();
+    owl.trigger('next.owl.carousel');
+  })
+  $('.special-offers .slider-nav .prev').click(function (e) {
     e.preventDefault();
     owl.trigger('prev.owl.carousel', [300]);
   })
