@@ -189,7 +189,7 @@ header .navbar-collapse {
   justify-content: space-between;
   align-items: center;
   border-radius: 20px;
-  padding: 20px 30px;
+  padding: 18px 30px;
   margin-top: 18px;
   font-size: 14px;
 }
@@ -655,7 +655,7 @@ header .subscribe-block {
 .form-floating > label {
   position: absolute;
   top: 3px;
-  left: 30px;
+  left: 50px;
   height: 100%;
   pointer-events: none;
   color: #808080;
@@ -725,6 +725,9 @@ header .subscribe-block {
 }
 
 @media screen and (min-width: 768px) {
+  .form-floating > label{
+    left: 30px
+  }
   .special-offers .slider-nav {
     display: flex;
     margin-left: auto;
